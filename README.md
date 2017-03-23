@@ -10,7 +10,7 @@ The idea here is that you have a template for matching nodes or paths based on s
 The first commit here is pct.FilterNodeByLabel() -- this is essentially a specialized form of
 the `WHERE` clause.
 
-##Calling from Cypher queries
+## Calling from Cypher queries
 
 ```
 // Calling FilterNodeByLabel
