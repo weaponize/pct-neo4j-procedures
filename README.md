@@ -19,7 +19,7 @@ Calling from Cypher queries:
 // This will match all nodes according to the first label (type) 
 // of the 101st node in the database
 match (f) with f skip 100 limit 1
-MATCH (n) with f,n limit 100000
+match (n) with f,n limit 100000
 call pct.FilterNodeByLabel(n,labels(f)[0]) yield result
 return result
 ```
