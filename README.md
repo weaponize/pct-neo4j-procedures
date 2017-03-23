@@ -1,4 +1,4 @@
-= PCT Neo4j Stored Procesdures
+# PCT Neo4j Stored Procesdures
 
 This is a repo for some stored procedure stuff for the Neo4j graph database. These plugins are 
 mainly build to look at graphs that represent trees. All nodes have a relationship of type Child
@@ -10,7 +10,7 @@ The idea here is that you have a template for matching nodes or paths based on s
 The first commit here is pct.FilterNodeByLabel() -- this is essentially a specialized form of
 the `WHERE` clause.
 
-==
+##
 
 Calling from Cypher queries:
 
@@ -25,13 +25,13 @@ return result
 ```
 
 
-== Based on Neo4j Examples
+## Based on Neo4j Examples
 
 The skeleton for this project came from Neo4j. This repo is a place to store some of the things I'm doing with graphs. They may or may not be applicable to your shit.
 
 Forked from https://github.com/neo4j-examples/neo4j-procedure-template/blob/master/src/main/java/example/FullTextIndex.java[`src/main/java/example/FullTextIndex.java`] and the https://github.com/neo4j-examples/neo4j-procedure-template/blob/master/src/test/java/example/LegacyFullTextIndexTest.java[test code] including Test-Server-Setup.
 
-== Building
+## Building
 
 This project uses maven, to build a jar-file with the procedure in this
 project, simply package the project with maven:
@@ -41,6 +41,6 @@ project, simply package the project with maven:
 This will produce a jar-file,`target/procedure-template-1.0.0-SNAPSHOT.jar`,
 that can be deployed in the `plugin` directory of your Neo4j instance.
 
-== License
+## License
 
 Various. Anything here is free as in beer. I won't commit the secret sauce :)
